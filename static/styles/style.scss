@@ -289,6 +289,14 @@ table {
     text-align: center;
     text-transform: uppercase;
 }
+.post-intro {
+    display: flex;
+    justify-content: center;
+}
+
+.post-intro .post-header-logo {
+    padding: 0px 30px;
+}
 
 .post-title,
 .page-title {

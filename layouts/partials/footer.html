@@ -18,6 +18,15 @@
                 <p class="footer-copyright">
                     <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
                     <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+
+                    {{ if .Site.Params.ContentLicense }}
+                        <br/>
+                        {{ if .Site.Params.ContentLicense.URL }}
+                            <span>All content released under a <a href="{{ .Site.Params.ContentLicense.URL }}">{{ .Site.Params.ContentLicense.Name }}</a> license</span>
+                        {{ else }}
+                            <span>All content released under a {{ .Site.Params.ContentLicense.Name }} license.</span>
+                        {{ end }}
+                    {{ end }} 
                 </p>
             </div>
         </footer>
