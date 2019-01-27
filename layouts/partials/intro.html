@@ -1,13 +1,13 @@
 {{ if .Site.Params.intro }}
     <div class="post-intro" >
-        {{ if .Site.Params.logo }}
+        {{ if .Site.Params.avatar }}
             <div class="post-header-logo" >
                 <a href=" {{.Site.BaseURL }}">
-                    <img class="logo" src="{{ .Site.BaseURL }}images/{{ .Site.Params.logo.url }}"
-                        width="{{ .Site.Params.logo.width }}" 
-                        height="{{ .Site.Params.logo.height }}" 
+                    <img class="logo" src="{{ .Site.BaseURL }}images/{{ .Site.Params.avatar.url }}"
+                        width="{{ .Site.Params.avatar.width }}" 
+                        height="{{ .Site.Params.avatar.height }}" 
                         style="border-radius: 50%;"
-                        alt="{{ .Site.Params.logo.alt }}"/>
+                        alt="{{ .Site.Params.avatar.alt }}"/>
                 </a>
             </div>
             <header class="post-header with-logo">

@@ -2,8 +2,9 @@
 // ============================================================ //
 // ============================================================ //
 
-$primary: #F03838;
+$primary: #d02e2e;
 $secondary: #303030;
+$alternative_text: #7b7b7b;
 $background: #FEFEFE;
 
 /* ============================================================ */
@@ -16,7 +17,7 @@ body {
     background: $background;
     color: #424242;
     font-family: "Open Sans", arial, sans-serif;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -60,7 +61,7 @@ blockquote {
     padding: 5px 30px;
 
     p {
-        color: #AEADAD;
+        color: $alternative_text;
         display: block;
         font-style: italic;
         margin: 0;
@@ -133,7 +134,7 @@ table {
 
     td { padding: 10px; }
 
-    tr { border-bottom: 1px dotted #AEADAD; }
+    tr { border-bottom: 1px dotted $alternative_text; }
 }
 
 ::selection {
@@ -313,13 +314,13 @@ table {
 .post-date,
 .post-reading,
 .blog-description {
-    color: #AEADAD;
+    color: $alternative_text;
     font-size: 14px;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.4;
     margin: 25px 0 0;
 
-    a { color: #AEADAD; }
+    a { color: $alternative_text; }
     a:hover { color: $primary; }
 }
 
@@ -361,7 +362,7 @@ table {
 
 .post-tags,
 .share {
-    color: #AEADAD;
+    color: $alternative_text;
     font-size: 14px;
 
     span { font-weight: 600; }
@@ -523,7 +524,7 @@ table {
 }
 
 .author-meta {
-    color: #AEADAD;
+    color: $alternative_text;
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
@@ -538,7 +539,7 @@ table {
 
     i { margin-right: 8px; }
 
-    a { color: #AEADAD; }
+    a { color: $alternative_text; }
     a:hover { color: $primary; }
 }
 
@@ -554,7 +555,7 @@ table {
 
 .footer {
     background: $secondary;
-    color: #D3D3D3;
+    color: white;
     height: 265px;
     margin-top: 95px;
     overflow: auto;
@@ -568,14 +569,14 @@ table {
 }
 
 .footer-copyright {
-    color: #656565;
+    color: white;
     font-size: 14px;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
 
     a {
-        color: #656565;
+        color: white;
         font-weight: 700;
 
         &:hover { color: #FEFEFE; }
@@ -645,6 +646,23 @@ table {
             word-wrap: break-word;
             overflow-wrap: break-word;
         }
+    }
+
+    .post-intro {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .post-header-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .post-header-logo img {
+        width: 80px;
+        height: 80px;
+        margin: 20px 0px;
     }
 
     .post-title,
