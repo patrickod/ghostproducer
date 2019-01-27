@@ -739,6 +739,23 @@ table {
         overflow-wrap: break-word;
     }
 
+    .post-intro {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .post-header-logo {
+        display: flex;
+        justify-content: center;
+     }
+
+    .post-header-logo img {
+        width: 80px;
+        height: 80px;
+        margin: 20px 0px;
+    }
+
     .post-date,
     .blog-description,
     .author-meta {
